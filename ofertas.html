@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmpleAR - Ofertas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-contenedor">
+      <img src="img/logo.png" alt="Logo EmpleAR" class="logo">
+      <p class="p-logo"><span class="span-emple">Emple</span><span class="span-ar">AR</span></p>
+    </div>
+    <button class="menu-hamburguesa" id="menu-toggle">&#9776;</button>
+    <nav class="nav-barra" id="nav-barra">
+      <a href="index.html" class="nav-item">Inicio</a>
+      <a href="ofertas.html" class="nav-item">Ofertas</a>
+      <a href="empresas.html" class="nav-item">Empresas</a>
+      <a href="beneficios.html" class="nav-item">Beneficios</a>
+      <a href="contacto.html" class="nav-item">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Contenido -->
+  <main style="padding: 140px 40px 60px;">
+    <h1 style="font-size: 2.5rem; text-align: center; margin-bottom: 2rem; color: #00e1ff;">Ofertas de Empleo</h1>
+    <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+      
+      <div style="background: #1c0b23; padding: 1.5rem; border-radius: 10px;">
+        <h2 style="font-size: 1.5rem;">Desarrollador Web</h2>
+        <p>Empresa: TechNova</p>
+        <p>Modalidad: Remoto</p>
+        <p>Descripción: Desarrollo Frontend en React y manejo de APIs REST.</p>
+        <a href="postulacion.html" style="display: inline-block; margin-top: 1rem; background: yellow; color: #120929; font-weight: bold; padding: 0.5rem 1rem; border-radius: 5px;">Postularme</a>
+      </div>
+
+      <div style="background: #1c0b23; padding: 1.5rem; border-radius: 10px;">
+        <h2 style="font-size: 1.5rem;">Analista Contable</h2>
+        <p>Empresa: Grupo Fiscal</p>
+        <p>Modalidad: Presencial</p>
+        <p>Descripción: Registro contable, análisis de cuentas y reportes mensuales.</p>
+        <a href="postulacion.html" style="display: inline-block; margin-top: 1rem; background: yellow; color: #120929; font-weight: bold; padding: 0.5rem 1rem; border-radius: 5px;">Postularme</a>
+      </div>
+
+      <div style="background: #1c0b23; padding: 1.5rem; border-radius: 10px;">
+        <h2 style="font-size: 1.5rem;">Operario de Depósito</h2>
+        <p>Empresa: Logística Express</p>
+        <p>Modalidad: Presencial</p>
+        <p>Descripción: Tareas de carga, descarga y control de stock.</p>
+        <a href="postulacion.html" style="display: inline-block; margin-top: 1rem; background: yellow; color: #120929; font-weight: bold; padding: 0.5rem 1rem; border-radius: 5px;">Postularme</a>
+      </div>
+
+    </section>
+  </main>
+
+ <!-- Footer - Estilo unificado -->
+ <footer class="bg-[#1c0b23] py-8 mt-20">
+  <div class="container mx-auto text-center">
+    <p class="mb-4">© 2025 EmpleAR - Todos los derechos reservados</p>
+    <div class="flex justify-center space-x-6">
+      <a href="#" class="hover:opacity-75 transition-opacity">
+        <img src="img/Redes sociales/Facebook.png" alt="Facebook" class="w-8">
+      </a>
+      <a href="#" class="hover:opacity-75 transition-opacity">
+        <img src="img/Redes sociales/Instagram.png" alt="Instagram" class="w-8">
+      </a>
+      <a href="#" class="hover:opacity-75 transition-opacity">
+        <img src="img/Redes sociales/Linkedin.png" alt="LinkedIn" class="w-8">
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <!-- Script menú hamburguesa -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navBar = document.getElementById('nav-barra');
+
+    toggleBtn.addEventListener('click', () => {
+      navBar.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
+

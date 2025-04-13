@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmpleAR - Inicio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-contenedor">
+      <img src="img/Logo.png" alt="Logo EmpleAR" class="logo">
+      <p class="p-logo"><span class="span-emple">Emple</span><span class="span-ar">AR</span></p>
+    </div>
+    <button class="menu-hamburguesa" id="menu-toggle">&#9776;</button>
+    <nav class="nav-barra" id="nav-barra">
+      <a href="index.html" class="nav-item">Inicio</a>
+      <a href="ofertas.html" class="nav-item">Ofertas</a>
+      <a href="empresas.html" class="nav-item">Empresas</a>
+      <a href="beneficios.html" class="nav-item">Beneficios</a>
+      <a href="contacto.html" class="nav-item">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Hero / Carrusel -->
+<section class="carrusel">
+  <div class="slides">
+    
+    <!-- Slide 1 -->
+<div class="slide slide-1 active">
+  <div class="banner-content">
+      <h1>Impulsá tu futuro con <span class="span-emple">Emple</span><span class="span-ar">AR</span></h1>
+      <p>Conectamos talento con oportunidades reales</p> <br>
+      <!-- Elimina el <button> y aplica la clase al <a> -->
+      <a href="contacto.html" class="banner-boton">¿Quiénes somos?</a>
+  </div>
+</div>
+
+    <!-- Slide 2 -->
+    <div class="slide slide-2">
+      <div class="banner-content">
+        <h1>Ofertas laborales actualizadas cada semana</h1>
+        <p>Empresas destacadas en todo el país</p> <br>
+        <button>
+          <a href="ofertas.html" class="banner-boton">Ver Ofertas</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- Slides nuevos 3 al 6 -->
+    <div class="slide slide-3">
+      <div class="banner-content">
+        <h1>Capacitaciones profesionales</h1>
+        <p>Mejorá tus habilidades</p> <br>
+        <button>
+          <a href="beneficios.html" class="banner-boton">Ver Cursos</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="slide slide-4">
+      <div class="banner-content">
+        <h1>Para empresas</h1>
+        <p>Encontrá el talento que necesitás</p> <br>
+        <button>
+          <a href="empresas.html" class="banner-boton">Publicar Oferta</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="slide slide-5">
+      <div class="banner-content">
+        <h1>Beneficios exclusivos</h1>
+        <p>Descuentos y convenios</p> <br>
+        <button>
+          <a href="beneficios.html" class="banner-boton">Ver Beneficios</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="slide slide-6">
+      <div class="banner-content">
+        <h1>Seguinos en redes</h1>
+        <p>Mantente actualizado</p> <br>
+        <button>
+          <a href="#redes" class="banner-boton">Nuestras Redes</a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navegación del carrusel (6 puntos) -->
+  <div class="carrusel-nav">
+    <div class="nav-carrusel active" data-slide="0"></div>
+    <div class="nav-carrusel" data-slide="1"></div>
+    <div class="nav-carrusel" data-slide="2"></div>
+    <div class="nav-carrusel" data-slide="3"></div>
+    <div class="nav-carrusel" data-slide="4"></div>
+    <div class="nav-carrusel" data-slide="5"></div>
+  </div>
+</section>
+
+ <!-- Footer - Estilo unificado -->
+ <footer class="bg-[#1c0b23] py-8 mt-20">
+  <div class="container mx-auto text-center">
+    <p class="mb-4">© 2025 EmpleAR - Todos los derechos reservados</p>
+    <div class="flex justify-center space-x-6">
+      <a href="#" class="hover:opacity-75 transition-opacity">
+        <img src="img/Redes sociales/Facebook.png" alt="Facebook" class="w-8">
+      </a>
+      <a href="#" class="hover:opacity-75 transition-opacity">
+        <img src="img/Redes sociales/Instagram.png" alt="Instagram" class="w-8">
+      </a>
+      <a href="#" class="hover:opacity-75 transition-opacity">
+        <img src="img/Redes sociales/Linkedin.png" alt="LinkedIn" class="w-8">
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <!-- Script menú hamburguesa -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navBar = document.getElementById('nav-barra');
+
+    toggleBtn.addEventListener('click', () => {
+      navBar.classList.toggle('active');
+    });
+  </script>
+
+  <!-- Script carrusel -->
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.nav-carrusel');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        dots[i].classList.remove('active');
+      });
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+      currentSlide = index;
+    }
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const slideIndex = parseInt(dot.getAttribute('data-slide'));
+        showSlide(slideIndex);
+      });
+    });
+
+    setInterval(() => {
+      let next = (currentSlide + 1) % slides.length;
+      showSlide(next);
+    }, 6000);
+  </script>
+
+</body>
+</html>

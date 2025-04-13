@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmpleAR - Nosotros</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+ <!-- Header -->
+ <header class="header">
+  <div class="logo-contenedor">
+    <img src="img/Logo.png" alt="Logo EmpleAR" class="logo">
+    <p class="p-logo"><span class="span-emple">Emple</span><span class="span-ar">AR</span></p>
+  </div>
+  <button class="menu-hamburguesa" id="menu-toggle">&#9776;</button>
+  <nav class="nav-barra" id="nav-barra">
+    <a href="index.html" class="nav-item">Inicio</a>
+    <a href="ofertas.html" class="nav-item">Ofertas</a>
+    <a href="empresas.html" class="nav-item">Empresas</a>
+    <a href="beneficios.html" class="nav-item">Beneficios</a>
+    <a href="contacto.html" class="nav-item">Contacto</a>
+  </nav>
+</header>
+
+  <!-- Contenido principal -->
+  <main style="padding: 190px 40px 60px;">
+    <section style="max-width: 1000px; margin: auto;">
+      <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Sobre <span class="span-emple">Emple</span><span class="span-ar">AR</span></h1>
+      <p style="margin-bottom: 1rem;">
+        En <strong><span class="span-emple">Emple</span><span class="span-ar">AR</span></strong> creemos en el poder de conectar personas con proyectos que transforman el mundo laboral. Somos una plataforma de empleo ágil, transparente y cercana, pensada para acompañarte en cada paso de tu desarrollo profesional.
+      </p>
+      <p style="margin-bottom: 1rem;">
+        Nuestro equipo trabaja diariamente para que accedas a las mejores ofertas del mercado, con empresas verificadas, asesoramiento personalizado y una experiencia intuitiva y confiable.
+      </p>
+      <p style="margin-bottom: 1rem;">
+        Desde 2024, EmpleAR se convirtió en el puente ideal entre talento y oportunidad. ¡Sumate a nuestra comunidad y hacé crecer tu carrera!
+      </p>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-6 py-16">
+      <form class="bg-[#1c0b23]/90 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-12">
+        <fieldset>
+          <legend class="text-3xl font-bold text-cyan-400 mb-8 text-center">
+            ENVIÁ TU CONSULTA
+          </legend>
+          
+          <!-- Campos del Formulario -->
+          <div class="space-y-6">
+            <!-- Nombre -->
+            <div>
+              <label for="nombres" class="block text-sm font-medium mb-2">Nombre</label>
+              <input 
+                type="text" 
+                id="nombres" 
+                name="nombres"
+                class="w-full bg-[#2d0f3d] border border-[#00e1ff]/30 rounded-lg py-3 px-4 text-white focus:ring-2 focus:ring-cyan-400 focus:border-transparent placeholder-gray-400"
+                placeholder="Ej: Juan"
+                required
+              >
+            </div>
+    
+            <!-- Apellido -->
+            <div>
+              <label for="apellido" class="block text-sm font-medium mb-2">Apellido</label>
+              <input 
+                type="text" 
+                id="apellido" 
+                name="apellido"
+                class="w-full bg-[#2d0f3d] border border-[#00e1ff]/30 rounded-lg py-3 px-4 text-white focus:ring-2 focus:ring-cyan-400 placeholder-gray-400"
+                placeholder="Ej: Pérez"
+                required
+              >
+            </div>
+    
+            <!-- Email -->
+            <div>
+              <label for="correo" class="block text-sm font-medium mb-2">Correo Electrónico</label>
+              <input 
+                type="email" 
+                id="correo" 
+                name="correo"
+                class="w-full bg-[#2d0f3d] border border-[#00e1ff]/30 rounded-lg py-3 px-4 text-white focus:ring-2 focus:ring-cyan-400 placeholder-gray-400"
+                placeholder="Ej: juan@mail.com"
+                required
+              >
+            </div>
+    
+            <!-- Consulta -->
+            <div>
+              <label for="consulta" class="block text-sm font-medium mb-2">Consulta</label>
+              <textarea 
+                id="consulta" 
+                name="consulta"
+                rows="4"
+                class="w-full bg-[#2d0f3d] border border-[#00e1ff]/30 rounded-lg py-3 px-4 text-white focus:ring-2 focus:ring-cyan-400 placeholder-gray-400"
+                placeholder="Describí tu consulta aquí..."
+                required
+              ></textarea>
+            </div>
+    
+            <!-- Botón Submit -->
+            <div class="mt-8">
+              <button 
+                type="submit"
+                class="w-full bg-cyan-500 hover:bg-cyan-600 text-black font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02]"
+              >
+                Enviar Consulta
+              </button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+ <!-- Footer - Estilo unificado -->
+ <footer class="bg-[#1c0b23] py-8 mt-20">
+  <div class="container mx-auto text-center">
+    <p class="mb-4">© 2025 EmpleAR - Todos los derechos reservados</p>
+    <div class="flex justify-center space-x-6">
+      <a href="#" class="hover:opacity-75 transition-opacity">
+        <img src="img/Redes sociales/Facebook.png" alt="Facebook" class="w-8">
+      </a>
+      <a href="#" class="hover:opacity-75 transition-opacity">
+        <img src="img/Redes sociales/Instagram.png" alt="Instagram" class="w-8">
+      </a>
+      <a href="#" class="hover:opacity-75 transition-opacity">
+        <img src="img/Redes sociales/Linkedin.png" alt="LinkedIn" class="w-8">
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- Script menú hamburguesa -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navBar = document.getElementById('nav-barra');
+
+    toggleBtn.addEventListener('click', () => {
+      navBar.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
+

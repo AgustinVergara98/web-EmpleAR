@@ -1,0 +1,211 @@
+/* CLASES GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, #4a0622, #120929);
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER FIJO */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    top: 1.9em;
+    z-index: 1000;
+    height: 80px;
+}
+
+/* LOGO */
+.logo-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.p-logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+/* LOGO_SPAN PARA PONER COLOR AL NOMBRE DE LA EMPRESA */
+.span-emple {
+    color: #00e1ff;
+}
+
+.span-ar {
+    color: yellow;
+}
+
+/* CARRUSEL HERO */
+.carrusel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-1 {
+    background-image: url('../img/assets/img1.jpg');
+}
+
+.slide-2 {
+    background-image: url('../img/assets/img2.jpg');
+}
+
+.slide-3 {
+    background-image: url('../img/assets/img3.jpg');
+}
+
+.slide-4 {
+    background-image: url('../img/assets/img4.jpg');
+}
+
+.slide-5 {
+    background-image: url('../img/assets/img5.jpg');
+}
+
+.slide-6 {
+    background-image: url('../img/assets/búsqueda_personal.jpg');
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.banner-boton {
+    background-color: #00e1ff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* NAVEGACIÓN CARRUSEL */
+.carrusel-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.nav-carrusel {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(228, 20, 20, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-carrusel.active {
+    background-color: #fff;
+}
+
+/* MENÚ HAMBURGUESA */
+.menu-hamburguesa {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-barra {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #00e1ff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    .nav-barra {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #1c0b23;
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-barra.active {
+        display: flex;
+    }
+
+    .banner-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .carousel {
+        height: 60vh;
+    }
+}

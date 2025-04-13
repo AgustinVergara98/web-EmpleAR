@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmpleAR - Empresas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="bg-gradient-to-r from-[#4a0622] to-[#120929] text-white"> <!-- Fondo consistente -->
+
+   <!-- Header -->
+   <header class="header">
+    <div class="logo-contenedor">
+      <img src="img/Logo.png" alt="Logo EmpleAR" class="logo">
+      <p class="p-logo"><span class="span-emple">Emple</span><span class="span-ar">AR</span></p>
+    </div>
+    <button class="menu-hamburguesa" id="menu-toggle">&#9776;</button>
+    <nav class="nav-barra" id="nav-barra">
+      <a href="index.html" class="nav-item">Inicio</a>
+      <a href="ofertas.html" class="nav-item">Ofertas</a>
+      <a href="empresas.html" class="nav-item">Empresas</a>
+      <a href="beneficios.html" class="nav-item">Beneficios</a>
+      <a href="contacto.html" class="nav-item">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Contenido Principal - Padding corregido -->
+  <main class="pt-32 pb-12 px-6 md:px-12"> <!-- Usando Tailwind para espaciado -->
+    <h2 class="text-4xl font-bold text-center mb-11
+     text-cyan-400"> <br> Beneficios de trabajar con nosotros</h2> <!-- Color consistente -->
+    
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Tarjeta 1 -->
+      <div class="bg-[#1c0b23]/80 p-6 rounded-xl shadow-2xl hover:transform hover:scale-105 transition-all">
+        <img src="img/assets/búsqueda_laboral.jpg" alt="Empresa 1" class="w-32 h-32 object-contain mx-auto mb-6">
+        <h3 class="text-2xl font-bold mb-4">Diversidad de ofertas laborales</h3>
+        <p class="text-gray-300">Nos encargamos de encontrar el trabajo ideal para tu persona.</p> <!-- Color de texto mejorado -->
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="bg-[#1c0b23]/80 p-6 rounded-xl shadow-2xl hover:transform hover:scale-105 transition-all">
+        <img src="img/assets/búsqueda_personal.jpg" alt="Empresa 2" class="w-32 h-32 object-contain mx-auto mb-6">
+        <h3 class="text-2xl font-bold mb-4">Conectando personas con el mundo</h3>
+        <p class="text-gray-300">Trabajamos con empresas lideres y globales que estamn en la constante busqueda de perfilñes laborales</p>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="bg-[#1c0b23]/80 p-6 rounded-xl shadow-2xl hover:transform hover:scale-105 transition-all">
+        <img src="img/assets/corrección_cv.jpg" alt="Empresa 3" class="w-32 h-32 object-contain mx-auto mb-6">
+        <h3 class="text-2xl font-bold mb-4">Optimizacionn de pertfiles</h3>
+        <p class="text-gray-300">Mediante el trabajo de un selecto grupo de operadores de recurso humanos y de la utilizacion de IA refinamos los curriculums de presentacion.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer - Estilo unificado -->
+  <footer class="bg-[#1c0b23] py-8 mt-20">
+    <div class="container mx-auto text-center">
+      <p class="mb-4">© 2025 EmpleAR - Todos los derechos reservados</p>
+      <div class="flex justify-center space-x-6">
+        <a href="#" class="hover:opacity-75 transition-opacity">
+          <img src="img/Redes sociales/Facebook.png" alt="Facebook" class="w-8">
+        </a>
+        <a href="#" class="hover:opacity-75 transition-opacity">
+          <img src="img/Redes sociales/Instagram.png" alt="Instagram" class="w-8">
+        </a>
+        <a href="#" class="hover:opacity-75 transition-opacity">
+          <img src="img/Redes sociales/Linkedin.png" alt="LinkedIn" class="w-8">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+ 
+  <!-- Script menú hamburguesa -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navBar = document.getElementById('nav-barra');
+
+    toggleBtn.addEventListener('click', () => {
+      navBar.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
