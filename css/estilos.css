@@ -22,7 +22,6 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    position: fixed;
     width: 100%;
     top: 1.9em;
     z-index: 1000;
@@ -34,7 +33,7 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 15px;
+    margin-top: 58px;
 }
 
 .logo {
@@ -100,7 +99,7 @@ a {
 }
 
 .slide-6 {
-    background-image: url('../img/assets/búsqueda_personal.jpg');
+    background-image: url('../img/assets/img6.jpg');
 }
 
 .slide.active {
@@ -108,7 +107,7 @@ a {
 }
 
 .banner-content {
-    position: absolute;
+    position: relative; /* Asegura que los enlaces estén sobre el slide */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -116,9 +115,11 @@ a {
     background: rgba(0, 0, 0, 0.6);
     padding: 2rem;
     border-radius: 10px;
+    z-index: 2; /* Coloca el contenido por encima de la imagen de fondo */
 }
 
 .banner-boton {
+    position: relative;
     background-color: #00e1ff;
     color: #000;
     padding: 10px 20px;
@@ -126,6 +127,7 @@ a {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
+    pointer-events: auto; /* Fuerza la interactividad */
     transition: background-color 0.3s, transform 0.3s;
 }
 
