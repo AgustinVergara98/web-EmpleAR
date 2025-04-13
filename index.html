@@ -1,99 +1,212 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EmpleAR - Inicio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EmpleAR - Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-contenedor">
+        <img src="img/Logo.png" alt="Logo EmpleAR" class="logo" />
+        <p class="p-logo">
+          <span class="span-emple">Emple</span><span class="span-ar">AR</span>
+        </p>
+      </div>
+      <button class="menu-hamburguesa" id="menu-toggle">&#9776;</button>
+      <nav class="nav-barra" id="nav-barra">
+        <a href="index.html" class="nav-item">Inicio</a>
+        <a href="ofertas.html" class="nav-item">Ofertas</a>
+        <a href="empresas.html" class="nav-item">Empresas</a>
+        <a href="beneficios.html" class="nav-item">Beneficios</a>
+        <a href="contacto.html" class="nav-item">Contacto</a>
+      </nav>
+    </header>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="logo-contenedor">
-      <img src="img/Logo.png" alt="Logo EmpleAR" class="logo">
-      <p class="p-logo"><span class="span-emple">Emple</span><span class="span-ar">AR</span></p>
+    <!-- Hero / Carrusel -->
+    <section class="carrusel">
+      <div class="slides">
+        <!-- Slide 1 -->
+        <div class="slide slide-1 active">
+          <div class="banner-content">
+            <h1>
+              Impulsá tu futuro con <span class="span-emple">Emple</span
+              ><span class="span-ar">AR</span>
+            </h1>
+            <p>Conectamos talento con oportunidades reales</p>
+            <br />
+            <!-- Elimina el <button> y aplica la clase al <a> -->
+            <a href="contacto.html" class="banner-boton">¿Quiénes somos?</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 Corregido -->
+        <div class="slide slide-2">
+          <div class="banner-content">
+            <h1>Ofertas laborales actualizadas cada semana</h1>
+            <p>Empresas destacadas en todo el país</p>
+            <br />
+            <a href="ofertas.html" class="banner-boton">Ver Ofertas</a>
+            <!-- Cierre faltante -->
+          </div>
+        </div>
+
+        <!-- Slides nuevos 3 al 6 -->
+        <div class="slide slide-3">
+          <div class="banner-content">
+            <h1>Capacitaciones profesionales</h1>
+            <p>Mejorá tus habilidades</p>
+            <br />
+            <a href="beneficios.html" class="banner-boton">Ver Cursos</a>
+          </div>
+        </div>
+
+        <div class="slide slide-4">
+          <div class="banner-content">
+            <h1>Para empresas</h1>
+            <p>Encontrá el talento que necesitás</p>
+            <br />
+            <a href="empresas.html" class="banner-boton">Publicar Oferta</a>
+          </div>
+        </div>
+
+        <div class="slide slide-5">
+          <div class="banner-content">
+            <h1>Beneficios exclusivos</h1>
+            <p>Descuentos y convenios</p>
+            <br />
+            <a href="beneficios.html" class="banner-boton">Ver Beneficios</a>
+          </div>
+        </div>
+
+        <div class="slide slide-6">
+          <div class="banner-content">
+            <h1>Haz mas atractiva tu postulacion</h1>
+            <p>Mantente actualizado en las tendencias de búsqueda laboral</p>
+            <br />
+            <a href="curriculum.html" class="banner-boton">Como armar tu CV</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navegación del carrusel (6 puntos) -->
+      <div class="carrusel-nav">
+        <div class="nav-carrusel active" data-slide="0"></div>
+        <div class="nav-carrusel" data-slide="1"></div>
+        <div class="nav-carrusel" data-slide="2"></div>
+        <div class="nav-carrusel" data-slide="3"></div>
+        <div class="nav-carrusel" data-slide="4"></div>
+        <div class="nav-carrusel" data-slide="5"></div>
+      </div>
+    </section>
+
+    <!-- Contenido principal sobre que es la empresa -->
+  <main style="padding: 40px 40px 60px;">
+    <section style="max-width: 1000px; margin: auto;">
+      <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Sobre <span class="span-emple">Emple</span><span class="span-ar">AR</span></h1>
+      <p style="margin-bottom: 1rem;">
+        En <strong><span class="span-emple">Emple</span><span class="span-ar">AR</span></strong> creemos en el poder de conectar personas con proyectos que transforman el mundo laboral. Somos una plataforma de empleo ágil, transparente y cercana, pensada para acompañarte en cada paso de tu desarrollo profesional.
+      </p>
+      <p style="margin-bottom: 1rem;">
+        Nuestro equipo trabaja diariamente para que accedas a las mejores ofertas del mercado, con empresas verificadas, asesoramiento personalizado y una experiencia intuitiva y confiable.
+      </p>
+      <p style="margin-bottom: 1rem;">
+        Desde 2025, <span class="span-emple"><strong>Emple</span><span class="span-ar">AR</span></strong> se convirtió en el puente ideal entre talento y oportunidad. ¡Sumate a nuestra comunidad y hacé crecer tu carrera!
+      </p>
+    </section>
+
+    <section style="max-width: 1000px; margin: auto;">
+      <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color:#00e1ff">¿Por qué elegirnos?</h2>
+      <ul style="list-style-type: disc; padding-left: 20px;">
+        <li style="margin-bottom: 0.5rem;">Acceso a ofertas laborales actualizadas semanalmente.</li>
+        <li style="margin-bottom: 0.5rem;">Capacitaciones y recursos para potenciar tu perfil profesional.</li>
+        <li style="margin-bottom: 0.5rem;">Asesoramiento personalizado en tu búsqueda laboral.</li>
+        <li style="margin-bottom: 0.5rem;">Red de empresas destacadas en todo el país.</li>
+      </ul>
+    </section>
+
+    <section style="max-width: 1000px; margin: auto;">
+      <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color:#00e1ff">Nuestra Misión</h2>
+      <p style="margin-bottom: 1rem;">
+        Facilitar la conexión entre talento y oportunidades laborales, brindando herramientas y recursos que potencien el desarrollo profesional de cada persona.
+      </p>
+      <h2 style="font-size: 2rem; margin-bottom: 1rem; color:#00e1ff">Nuestra Visión</h2>
+      <p style="margin-bottom: 1rem;">
+        Ser la plataforma de empleo líder en <span class="span-emple">Arg</span>ent<span class="span-emple">ina</span>, reconocida por su compromiso con la calidad, la transparencia y el desarrollo profesional de nuestros usuarios.
+    </section>
+
+    <section style="max-width: 1000px; margin: auto;">
+      <h2 style="font-size: 2rem; margin-bottom: 1rem; color:#00e1ff">Nuestros Valores</h2>
+      <ul style="list-style-type: disc; padding-left: 20px;">
+        <li style="margin-bottom: 0.5rem;">Compromiso: Trabajamos con dedicación para ofrecerte lo mejor.</li>
+        <li style="margin-bottom: 0.5rem;">Transparencia: Creemos en la honestidad y la claridad en cada interacción.</li>
+        <li style="margin-bottom: 0.5rem;">Innovación: Buscamos constantemente nuevas formas de mejorar tu experiencia.</li>
+        <li style="margin-bottom: 0.5rem;">Cercanía: Estamos aquí para acompañarte en cada paso de tu camino profesional.</li>
+        <li style="margin-bottom: 0.5rem;">Diversidad: Valoramos la riqueza de cada persona y su historia.</li>
+        <li style="margin-bottom: 0.5rem;">Empatía: Nos ponemos en tu lugar para entender tus necesidades.</li>
+        <li style="margin-bottom: 0.5rem;">Responsabilidad: Actuamos con ética y respeto hacia nuestros usuarios.</li>
+        <li style="margin-bottom: 0.5rem;">Colaboración: Creemos en el trabajo en equipo y la sinergia.</li>
+        <li style="margin-bottom: 0.5rem;">Excelencia: Buscamos la perfección en cada detalle.</li>
+        <li style="margin-bottom: 0.5rem;">Pasión: Amamos lo que hacemos y eso se refleja en nuestro trabajo.</li>
+      </ul>
+    </section>
+
+    <section style="max-width: 1000px; margin: auto;">
+      <h2 style="font-size: 2rem; margin-bottom: 1rem; color:#00e1ff">Nuestro Equipo</h2>
+      <p style="margin-bottom: 1rem;">
+        Contamos con un equipo multidisciplinario de profesionales apasionados por el mundo laboral y la tecnología. Cada uno de nosotros aporta su experiencia y conocimiento para hacer de <strong><span class="span-emple">Emple</span><span class="span-ar">AR</span></strong> un lugar donde las oportunidades se hacen realidad.
+      </p>
+      <p style="margin-bottom: 1rem;">
+        Desde desarrolladores hasta expertos en recursos humanos, cada miembro de nuestro equipo está comprometido con la misión de conectar talento con oportunidades laborales.
+      </p>
+      <p style="margin-bottom: 1rem;">
+        ¡Sumate a nuestra comunidad y descubrí todo lo que podemos ofrecerte!
+
+
+       <!-- Sección de Estadísticas - Corregida -->
+<section style="max-width: 1000px; margin: auto; padding: 40px 0;">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold mb-6 text-[#00e1ff]">¿Por qué elegirnos?</h2>
+      <p class="text-lg max-w-2xl mx-auto">
+        En <span class="span-emple">Emple</span><span class="span-ar">AR</span>, nos dedicamos a conectar talento con oportunidades laborales. Aquí te mostramos algunas de nuestras estadísticas más destacadas:
+      </p>
     </div>
-    <button class="menu-hamburguesa" id="menu-toggle">&#9776;</button>
-    <nav class="nav-barra" id="nav-barra">
-      <a href="index.html" class="nav-item">Inicio</a>
-      <a href="ofertas.html" class="nav-item">Ofertas</a>
-      <a href="empresas.html" class="nav-item">Empresas</a>
-      <a href="beneficios.html" class="nav-item">Beneficios</a>
-      <a href="contacto.html" class="nav-item">Contacto</a>
-    </nav>
-  </header>
 
-  <!-- Hero / Carrusel -->
-<section class="carrusel">
-  <div class="slides">
-    
-    <!-- Slide 1 -->
-<div class="slide slide-1 active">
-  <div class="banner-content">
-      <h1>Impulsá tu futuro con <span class="span-emple">Emple</span><span class="span-ar">AR</span></h1>
-      <p>Conectamos talento con oportunidades reales</p> <br>
-      <!-- Elimina el <button> y aplica la clase al <a> -->
-      <a href="contacto.html" class="banner-boton">¿Quiénes somos?</a>
-  </div>
-</div>
-
-    <!-- Slide 2 -->
-    <div class="slide slide-2">
-      <div class="banner-content">
-        <h1>Ofertas laborales actualizadas cada semana</h1>
-        <p>Empresas destacadas en todo el país</p> <br>
-          <a href="ofertas.html" class="banner-boton">Ver Ofertas</a
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Estadística 1 -->
+      <div class="bg-white shadow-lg rounded-xl p-6 hover:transform hover:scale-105 transition-all">
+        <h3 class="text-4xl font-bold text-blue-600 mb-2">+500</h3>
+        <p class="text-gray-600">Ofertas laborales activas</p>
+      </div>
+      
+      <!-- Estadística 2 -->
+      <div class="bg-white shadow-lg rounded-xl p-6 hover:transform hover:scale-105 transition-all">
+        <h3 class="text-4xl font-bold text-blue-600 mb-2">+200</h3>
+        <p class="text-gray-600">Empresas asociadas</p>
+      </div>
+      
+      <!-- Estadística 3 -->
+      <div class="bg-white shadow-lg rounded-xl p-6 hover:transform hover:scale-105 transition-all">
+        <h3 class="text-4xl font-bold text-blue-600 mb-2">+10,000</h3>
+        <p class="text-gray-600">Usuarios registrados</p>
+      </div>
+      
+      <!-- Estadística 4 -->
+      <div class="bg-white shadow-lg rounded-xl p-6 hover:transform hover:scale-105 transition-all">
+        <h3 class="text-4xl font-bold text-blue-600 mb-2">95%</h3>
+        <p class="text-gray-600">Satisfacción de usuarios</p>
       </div>
     </div>
-
-    <!-- Slides nuevos 3 al 6 -->
-    <div class="slide slide-3">
-      <div class="banner-content">
-        <h1>Capacitaciones profesionales</h1>
-        <p>Mejorá tus habilidades</p> <br>
-          <a href="beneficios.html" class="banner-boton">Ver Cursos</a>
-      </div>
-    </div>
-
-    <div class="slide slide-4">
-      <div class="banner-content">
-        <h1>Para empresas</h1>
-        <p>Encontrá el talento que necesitás</p> <br>
-          <a href="empresas.html" class="banner-boton">Publicar Oferta</a>
-      </div>
-    </div>
-
-    <div class="slide slide-5">
-      <div class="banner-content">
-        <h1>Beneficios exclusivos</h1>
-        <p>Descuentos y convenios</p> <br>
-          <a href="beneficios.html" class="banner-boton">Ver Beneficios</a>
-      </div>
-    </div>
-
-    <div class="slide slide-6">
-      <div class="banner-content">
-        <h1>Seguinos en redes</h1>
-        <p>Mantente actualizado</p> <br>
-          <a href="#redes" class="banner-boton">Nuestras Redes</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Navegación del carrusel (6 puntos) -->
-  <div class="carrusel-nav">
-    <div class="nav-carrusel active" data-slide="0"></div>
-    <div class="nav-carrusel" data-slide="1"></div>
-    <div class="nav-carrusel" data-slide="2"></div>
-    <div class="nav-carrusel" data-slide="3"></div>
-    <div class="nav-carrusel" data-slide="4"></div>
-    <div class="nav-carrusel" data-slide="5"></div>
   </div>
 </section>
 
- <!-- Footer - Estilo unificado -->
+  </main>
+
+    <!-- Footer - Estilo unificado -->
  <footer class="bg-[#1c0b23] py-8 mt-20">
   <div class="container mx-auto text-center">
     <p class="mb-4">© 2025 EmpleAR - Todos los derechos reservados</p>
@@ -111,44 +224,72 @@
   </div>
 </footer>
 
-  <!-- Script menú hamburguesa -->
-  <script>
-    const toggleBtn = document.getElementById('menu-toggle');
-    const navBar = document.getElementById('nav-barra');
 
-    toggleBtn.addEventListener('click', () => {
-      navBar.classList.toggle('active');
-    });
-  </script>
+    <!-- Script menú hamburguesa -->
+    <script>
+      const toggleBtn = document.getElementById("menu-toggle");
+      const navBar = document.getElementById("nav-barra");
 
-  <!-- Script carrusel -->
-  <script>
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.nav-carrusel');
-    let currentSlide = 0;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        dots[i].classList.remove('active');
+      toggleBtn.addEventListener("click", () => {
+        navBar.classList.toggle("active");
       });
-      slides[index].classList.add('active');
-      dots[index].classList.add('active');
-      currentSlide = index;
-    }
+    </script>
 
-    dots.forEach(dot => {
-      dot.addEventListener('click', () => {
-        const slideIndex = parseInt(dot.getAttribute('data-slide'));
-        showSlide(slideIndex);
+    <!-- Script carrusel -->
+    <script>
+      // Script carrusel modificado
+      const slides = document.querySelectorAll(".slide");
+      const dots = document.querySelectorAll(".nav-carrusel");
+      let currentSlide = 0;
+      let autoSlide = true; // Control para el intervalo automático
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove("active");
+          dots[i].classList.remove("active");
+        });
+        slides[index].classList.add("active");
+        dots[index].classList.add("active");
+        currentSlide = index;
+      }
+
+      dots.forEach((dot) => {
+        dot.addEventListener("click", (e) => {
+          e.stopPropagation(); // Evita que el evento llegue al slide
+          const slideIndex = parseInt(dot.dataset.slide);
+          showSlide(slideIndex);
+          resetAutoSlide();
+        });
       });
-    });
 
-    setInterval(() => {
-      let next = (currentSlide + 1) % slides.length;
-      showSlide(next);
-    }, 6000);
-  </script>
+      // Detiene el auto-slide cuando interactúas con un enlace
+      document.querySelectorAll(".banner-boton").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.stopPropagation();
+          autoSlide = false;
+          setTimeout(() => {
+            autoSlide = true;
+          }, 10000);
+        });
+      });
 
-</body>
+      // Sistema de auto-slide
+      let slideInterval = setInterval(() => {
+        if (autoSlide) {
+          let next = (currentSlide + 1) % slides.length;
+          showSlide(next);
+        }
+      }, 6000);
+
+      function resetAutoSlide() {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(() => {
+          if (autoSlide) {
+            let next = (currentSlide + 1) % slides.length;
+            showSlide(next);
+          }
+        }, 6000);
+      }
+    </script>
+  </body>
 </html>
