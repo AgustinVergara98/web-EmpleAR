@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EmpleAR - Capacitaciones</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body class="bg-gradient-to-r from-[#4a0622] to-[#120929] text-white">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-contenedor">
+        <img src="img/Logo.png" alt="Logo EmpleAR" class="logo" />
+        <p class="p-logo">
+          <span class="span-emple">Emple</span><span class="span-ar">AR</span>
+        </p>
+      </div>
+      <button class="menu-hamburguesa" id="menu-toggle">&#9776;</button>
+      <nav class="nav-barra" id="nav-barra">
+        <a href="index.html" class="nav-item">Inicio</a>
+        <a href="ofertas.html" class="nav-item">Ofertas</a>
+        <a href="empresas.html" class="nav-item">Empresas</a>
+        <a href="beneficios.html" class="nav-item">Beneficios</a>
+        <a href="curriculum.html" class="nav-item">Curriculum</a>
+        <a href="nosotros.html" class="nav-item">Nuestro Equipo</a>
+        <a href="contacto.html" class="nav-item">Contacto</a>
+      </nav>
+    </header>
+
+    <main class="pt-32 pb-12 px-4 md:px-8">
+      <!-- Sección Hero -->
+      <section class="text-center mb-16">
+        <h1 class="text-4xl font-bold mb-6 text-cyan-400">
+          Potenciá tu Carrera Profesional
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+          Cursos especializados para desarrollar las habilidades más demandadas
+          del mercado laboral actual
+        </p>
+      </section>
+
+      <!-- Catálogo de Cursos -->
+      <section class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Curso 1 -->
+          <div
+            class="bg-[#1c0b23]/80 p-6 rounded-xl shadow-2xl hover:transform hover:scale-105 transition-all"
+          >
+            <div class="mb-4">
+              <span
+                class="bg-cyan-500 text-black px-3 py-1 rounded-full text-sm font-bold"
+                >Nuevo</span
+              >
+            </div>
+            <h2 class="text-2xl font-bold mb-4">
+              Inteligencia Artificial Aplicada
+            </h2>
+            <div class="flex items-center mb-4 text-gray-400">
+              <span class="mr-4">⏱ 40 horas</span>
+              <span>📅 8 semanas</span>
+            </div>
+            <ul class="list-disc pl-5 mb-6 text-gray-300 space-y-2">
+              <li>Fundamentos de IA</li>
+              <li>Machine Learning práctico</li>
+              <li>Ética en IA</li>
+              <li>Casos de uso reales</li>
+            </ul>
+            <button
+              class="w-full bg-cyan-500 hover:bg-cyan-600 text-black font-bold py-2 px-4 rounded-lg transition-colors"
+            >
+              Inscribirme
+            </button>
+          </div>
+
+          <!-- Curso 2 -->
+          <div
+            class="bg-[#1c0b23]/80 p-6 rounded-xl shadow-2xl hover:transform hover:scale-105 transition-all"
+          >
+            <h2 class="text-2xl font-bold mb-4">Marketing Digital Avanzado</h2>
+            <div class="flex items-center mb-4 text-gray-400">
+              <span class="mr-4">⏱ 30 horas</span>
+              <span>📅 6 semanas</span>
+            </div>
+            <ul class="list-disc pl-5 mb-6 text-gray-300 space-y-2">
+              <li>Estrategias SEO/SEM</li>
+              <li>Analítica web</li>
+              <li>Publicidad en redes</li>
+              <li>Conversión de leads</li>
+            </ul>
+            <button
+              class="w-full bg-cyan-500 hover:bg-cyan-600 text-black font-bold py-2 px-4 rounded-lg transition-colors"
+            >
+              Inscribirme
+            </button>
+          </div>
+
+          <!-- Curso 3 -->
+          <div
+            class="bg-[#1c0b23]/80 p-6 rounded-xl shadow-2xl hover:transform hover:scale-105 transition-all"
+          >
+            <h2 class="text-2xl font-bold mb-4">Liderazgo Efectivo</h2>
+            <div class="flex items-center mb-4 text-gray-400">
+              <span class="mr-4">⏱ 25 horas</span>
+              <span>📅 5 semanas</span>
+            </div>
+            <ul class="list-disc pl-5 mb-6 text-gray-300 space-y-2">
+              <li>Gestión de equipos</li>
+              <li>Comunicación asertiva</li>
+              <li>Resolución de conflictos</li>
+              <li>Motivación laboral</li>
+            </ul>
+            <button
+              class="w-full bg-cyan-500 hover:bg-cyan-600 text-black font-bold py-2 px-4 rounded-lg transition-colors"
+            >
+              Inscribirme
+            </button>
+          </div>
+        </div>
+
+        <!-- Beneficios -->
+        <div class="mt-16 bg-[#1c0b23]/80 p-8 rounded-xl shadow-2xl">
+          <h2 class="text-3xl font-bold text-cyan-400 mb-6">
+            ¿Por qué capacitarse con nosotros?
+          </h2>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="text-center p-4">
+              <div class="text-4xl mb-4">🎓</div>
+              <h3 class="text-xl font-bold mb-2">Certificación Oficial</h3>
+              <p class="text-gray-300">
+                Diplomas validados por empresas líderes
+              </p>
+            </div>
+            <div class="text-center p-4">
+              <div class="text-4xl mb-4">👨💻</div>
+              <h3 class="text-xl font-bold mb-2">Modalidad Flexible</h3>
+              <p class="text-gray-300">Online o presencial - Vos elegís</p>
+            </div>
+            <div class="text-center p-4">
+              <div class="text-4xl mb-4">🤝</div>
+              <h3 class="text-xl font-bold mb-2">Bolsa de Trabajo</h3>
+              <p class="text-gray-300">Acceso exclusivo a nuestras ofertas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1c0b23] py-8 mt-20">
+      <div class="container mx-auto text-center">
+        <p class="mb-4">© 2025 EmpleAR - Todos los derechos reservados</p>
+        <div class="flex justify-center space-x-6">
+          <a href="#" class="hover:opacity-75 transition-opacity">
+            <img
+              src="img/Redes sociales/Facebook.png"
+              alt="Facebook"
+              class="w-8"
+            />
+          </a>
+          <a href="#" class="hover:opacity-75 transition-opacity">
+            <img
+              src="img/Redes sociales/Instagram.png"
+              alt="Instagram"
+              class="w-8"
+            />
+          </a>
+          <a href="#" class="hover:opacity-75 transition-opacity">
+            <img
+              src="img/Redes sociales/Linkedin.png"
+              alt="LinkedIn"
+              class="w-8"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script menú hamburguesa -->
+    <script>
+      const toggleBtn = document.getElementById("menu-toggle");
+      const navBar = document.getElementById("nav-barra");
+
+      toggleBtn.addEventListener("click", () => {
+        navBar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
